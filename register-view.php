@@ -30,7 +30,7 @@
 
 
             <div class="jumbotron">
-                <form action="register-vehicle.php" method="POST">
+                <form action="register-model.php" method="POST">
 
                 <div class="row">
                     <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">

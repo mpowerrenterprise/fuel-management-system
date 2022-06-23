@@ -21,7 +21,8 @@ $sql = "INSERT INTO vehicle_data (auto_id, vehicle_number, vehicle_owner_name, l
 VALUES ('', '$vehicle_no', '$vehicle_owner', '$licence_status')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  header('Location: register-view.php');
+die();
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
