@@ -1,3 +1,18 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "feul-management-system-database";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$sql = "SELECT * FROM vehicle_data";
+$result = $conn -> query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,10 +58,12 @@
                         <input type="text" class=" form-control" name="vehicle_owner" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
 
-                    
-                    <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
-                        <label for="exampleInputEmail1">Licence Renewal Status</label>
-                        <input type="text" class=" form-control" name="licence_status" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="form-group col-md-4 col-sm-4">
+                        <label for="exampleSelect">Licence Renewal Status</label>
+                        <select class="form-control" id="exampleSelect" name="licence_status">
+                            <option>Valid</option>
+                            <option>Expired</option>
+                        </select>
                     </div>
 
                 </div>
@@ -58,33 +75,39 @@
             </div>
 
 
-            <table class="table table-hover table-dark">
+            <table class="table table-hover table-dark" style="margin-top:80px;">
+                
                 <thead>
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Vehicle No</th>
                     <th scope="col">Vehicle Owner</th>
                     <th scope="col">Licence Status</th>
+                    <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
+
+                    <?php
+                    
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                           
+                            $index = 1;
+                            while($row = $result->fetch_assoc()) {
+                                echo "<tr>";
+                                echo "<td>".$index."</td>";
+                                echo "<td>".$row["vehicle_number"]."</td>";
+                                echo "<td>".$row["vehicle_owner_name"]."</td>";
+                                echo "<td>".$row["licence_renewal_status"]."</td>";
+                                echo "<td>".'<button type="button" class="btn btn-success btn-sm">Edit</button> <button type="button" class="btn btn-danger btn-sm">Delete</button>'."</td>";
+                                echo "</tr>";
+
+                                $index++;
+                            }
+                        } 
+
+                    ?>
                 </tbody>
             </table>
         
