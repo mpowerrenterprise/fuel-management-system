@@ -19,10 +19,10 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php">Home Page</a>
+                        <a class="nav-link " href="index.php">Home Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register-view.php">Register Page</a>
+                        <a class="nav-link active" href="register-view.php">Register Page</a>
                     </li>
                     </ul>
                 </div>
@@ -30,18 +30,28 @@
 
 
             <div class="jumbotron">
-                <form>
+                <form action="register-vehicle.php" method="POST">
 
-                    <div class="row">
-                        <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
-                            <label for="exampleInputEmail1">Enter Vehicle No:</label>
-                
-                            <input type="text" class=" form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-
+                <div class="row">
+                    <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
+                        <label for="exampleInputEmail1">Vehicle No:</label>
+                        <input type="text" class=" form-control" name="vehicle_no" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
 
-                    <button type="submit" class="btn btn-primary col-md-2 col-sm-2">Submit</button>
+                    <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
+                        <label for="exampleInputEmail1">Vehicle Owner Name:</label>
+                        <input type="text" class=" form-control" name="vehicle_owner" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    
+                    <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
+                        <label for="exampleInputEmail1">Licence Renewal Status</label>
+                        <input type="text" class=" form-control" name="licence_status" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                </div>
+
+                    <button type="submit" class="btn btn-primary col-md-2 col-sm-2">Register</button>
                 
                 </form>
                        
