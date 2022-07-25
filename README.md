@@ -28,55 +28,54 @@ It is a simple fuel management system prototype for Sri Lankan's fuel shortage i
 
 ## Configuration & Setup
 
-- Install pyttsx3
+- Setup the database that is found under the  pyttsx3 1-database folder.
 
   ```
-  pip install pyttsx3
+  fuel-management-system/1-database/fuel-management-system-database.sql
   ```
 
-- Install speechRecognition
+- Deploy the project, the project source is found under the 2-souce folder.
 
   ```
-  pip install SpeechRecognition
-  ```
-
-- Install soundfile
-
-  ```
-  pip install soundfile
-  ```
-
-- Install imutils
-
-  ```
-  pip install imutils
-  ```
-
-- Install pygame
-
-  ```
-  pip install pygame
+    fuel-management-system/2-source
   ```
 
 
-## Execution
+## Demo
 
-  ```
-  python run.py
-  ```
+### Dashboard Page
 
-## Outputs
+This is the home page of the system, As it is already mentioned, it is just a prototype project for training purpose. It does not have any login panel.
 
-![IMAGE](github-readme-contents/demo1.jpg)
+![IMAGE](0-references/0-readme-github-content/0-home-page.jpg)
 
-![IMAGE](github-readme-contents/demo2.jpg)
-
-![IMAGE](github-readme-contents/demo3.jpg)
+### Register Page
 
 
-## Reference
+![IMAGE](0-references/0-readme-github-content/2-register-page.jpg)
 
-![IMAGE](github-readme-contents/making.jpg)
+#### Features
+
+- Vehicle data editing function
+- Vehicle data deletion function
+
+### Edit Page
+
+![IMAGE](0-references/0-readme-github-content/3-edit-page.jpg)
+
+### Testing
+
+![IMAGE](0-references/0-readme-github-content/usage.jpg)
+
+### Success page
+
+![IMAGE](0-references/0-readme-github-content/4-fuel-success-page.jpg)
+
+
+### Failed page
+
+![IMAGE](0-references/0-readme-github-content/5-fuel-failed-page.jpg)
+
 
 ## Social Media Links
 
