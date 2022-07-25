@@ -24,7 +24,7 @@
             <h2 style="text-align:center;">Request is successfull!</h2>
             <hr>
 
-            <h3 style="text-align:center;">Note: You purchased the feul for this week, you can get feul next time after
+            <h3 style="text-align:center;">Note: You purchased the fuel for this week, you can get fuel next time after
                 7 days.</h3>
 
 

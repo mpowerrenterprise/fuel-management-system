@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2022 at 10:41 AM
+-- Generation Time: Jul 25, 2022 at 02:24 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -18,30 +18,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `feul-management-system-database`
+-- Database: `fuel-management-system-database`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feul_data`
+-- Table structure for table `fuel_data`
 --
 
-CREATE TABLE `feul_data` (
+CREATE TABLE `fuel_data` (
   `auto_id` int(11) NOT NULL,
   `vehicle_no` varchar(200) NOT NULL,
   `date_of_received` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `feul_data`
+-- Dumping data for table `fuel_data`
 --
 
-INSERT INTO `feul_data` (`auto_id`, `vehicle_no`, `date_of_received`) VALUES
+INSERT INTO `fuel_data` (`auto_id`, `vehicle_no`, `date_of_received`) VALUES
 (4, 'dsf', '2022-07-25'),
 (5, 'dsfdsad', '2022-07-25'),
 (6, 'dsad', '2022-07-25'),
-(7, 'ds', '2022-07-21');
+(7, 'ds', '2022-07-21'),
+(8, '', '2022-07-25'),
+(9, '', '2022-07-25'),
+(10, 'dsfdf', '2022-07-25'),
+(11, 'dsfdfs', '2022-07-25'),
+(12, 'dfsgffsgfd', '2022-07-25'),
+(13, 'dfdsfsdfds', '2022-07-25'),
+(14, 'fdsfs', '2022-07-25'),
+(15, 'dsadsa', '2022-07-25');
 
 -- --------------------------------------------------------
 
@@ -61,18 +69,18 @@ CREATE TABLE `vehicle_data` (
 --
 
 INSERT INTO `vehicle_data` (`auto_id`, `vehicle_number`, `vehicle_owner_name`, `licence_renewal_status`) VALUES
-(19, 'ws2323', 'Gunarakulan', 'Expired'),
-(20, 'w24wrfd', 'Rakulan', 'Expired'),
-(21, 'v34ewrw', 'Guna', 'Valid');
+(45, 'V23123', 'Rakulan', 'Expired'),
+(46, 'V2323', 'Gunarakulan', 'Expired'),
+(47, 'Cfdsaf', 'Guna', 'Valid');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `feul_data`
+-- Indexes for table `fuel_data`
 --
-ALTER TABLE `feul_data`
+ALTER TABLE `fuel_data`
   ADD PRIMARY KEY (`auto_id`);
 
 --
@@ -86,16 +94,16 @@ ALTER TABLE `vehicle_data`
 --
 
 --
--- AUTO_INCREMENT for table `feul_data`
+-- AUTO_INCREMENT for table `fuel_data`
 --
-ALTER TABLE `feul_data`
-  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `fuel_data`
+  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `vehicle_data`
 --
 ALTER TABLE `vehicle_data`
-  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "feul-management-system-database";
+$dbname = "fuel-management-system-database";
 
 $vehicle_no_user = $_POST['vehicle_no'];
 
@@ -11,7 +11,7 @@ $vehicle_no_user = $_POST['vehicle_no'];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "SELECT * FROM feul_data where vehicle_no = '$vehicle_no_user'";
+$sql = "SELECT * FROM fuel_data where vehicle_no = '$vehicle_no_user'";
 $result = $conn -> query($sql);
 
 $vehicle_no = "";
@@ -19,19 +19,19 @@ $date_of_received = "";
 
 
 if ($result->num_rows > 0) {
-    
+
     while($row = $result->fetch_assoc()) {
 
         $vehicle_no =  $row["vehicle_no"];
         $date_of_received = $row["date_of_received"];
-    
+
     }
-} 
+}
 
 if($vehicle_no != "" && $date_of_received != ""){
 
     $today = date("Y-m-d");
-    
+
     $datetime1 = strtotime($today);
     $datetime2 = strtotime($date_of_received);
 
@@ -41,21 +41,21 @@ if($vehicle_no != "" && $date_of_received != ""){
     if($days >= 7){
 
         $today = date("Y-m-d");
-    
-        $sql = "UPDATE feul_data SET date_of_received = '$today' WHERE vehicle_no = '$vehicle_no'";
-    
+
+        $sql = "UPDATE fuel_data SET date_of_received = '$today' WHERE vehicle_no = '$vehicle_no'";
+
         if ($conn->query($sql) === TRUE) {
-            header('Location: ../0-view-pages/3-feul-success-view-page.php');
+            header('Location: ../0-view-pages/3-fuel-success-view-page.php');
             die();
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
-        
+
     }else{
 
         $balance_days = 7 - $days;
-        header('Location: ../0-view-pages/2-feul-failed-view-page.php?days=$balance_days"');
-        
+        header('Location: ../0-view-pages/2-fuel-failed-view-page.php?days=$balance_days"');
+
     }
 
 
@@ -65,10 +65,10 @@ if($vehicle_no != "" && $date_of_received != ""){
 
     $today = date("Y-m-d");
 
-    $sql = "INSERT INTO feul_data VALUES ('', '$vehicle_no_user', '$today')";
+    $sql = "INSERT INTO fuel_data VALUES ('', '$vehicle_no_user', '$today')";
 
     if ($conn->query($sql) === TRUE) {
-        header('Location: ../0-view-pages/3-feul-success-view-page.php');
+        header('Location: ../0-view-pages/3-fuel-success-view-page.php');
     die();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

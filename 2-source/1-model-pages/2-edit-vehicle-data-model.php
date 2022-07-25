@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "feul-management-system-database";
+$dbname = "fuel-management-system-database";
 
 $auto_id = $_GET['id'];
 

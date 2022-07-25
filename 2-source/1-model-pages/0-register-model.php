@@ -8,7 +8,7 @@ $licence_status = $_POST['licence_status'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "feul-management-system-database";
+$dbname = "fuel-management-system-database";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);

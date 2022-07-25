@@ -24,7 +24,7 @@
             <h2 style="text-align:center;">Request is failed!</h2>
             <hr>
 
-            <h3 style="text-align:center;">Note: You have already purchased the feul for this week, you can get feul
+            <h3 style="text-align:center;">Note: You have already purchased the fuel for this week, you can get fuel
                 after
                 <?php echo $_GET['days']; ?> days.</h3>
 
