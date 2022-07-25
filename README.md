@@ -21,7 +21,9 @@ It is a simple fuel management system prototype for Sri Lankan's fuel shortage i
 ├── 0-references       # Contains docs/references of the project.
 ├── 1-database         # Contains database of the system.
 ├── 2-source           # Contains project source code.    
-└── README.md          # Readme Document
+├── README.md          # Readme Document
+└── LICENCE             # License (Apache 2.0 license)
+
 ```
 
 ## Configuration & Setup
