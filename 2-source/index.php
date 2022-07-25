@@ -26,7 +26,7 @@
                             <a class="nav-link active" href="index.php">Home Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register-view.php">Register Page</a>
+                            <a class="nav-link" href="0-view-pages/0-register-view-page.php">Register Page</a>
                         </li>
                     </ul>
                 </div>
