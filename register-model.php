@@ -4,12 +4,13 @@ $vehicle_no = $_POST['vehicle_no'];
 $vehicle_owner = $_POST['vehicle_owner'];
 $licence_status = $_POST['licence_status'];
 
+// Create connection
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "feul-management-system-database";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
