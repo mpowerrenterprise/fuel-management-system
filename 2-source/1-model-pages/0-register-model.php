@@ -22,7 +22,7 @@ $sql = "INSERT INTO vehicle_data (auto_id, vehicle_number, vehicle_owner_name, l
 VALUES ('', '$vehicle_no', '$vehicle_owner', '$licence_status')";
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: register-view.php');
+  header('Location: ../0-view-pages/0-register-view-page.php');
 die();
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;

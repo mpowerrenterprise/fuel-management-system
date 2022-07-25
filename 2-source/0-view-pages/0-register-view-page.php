@@ -49,7 +49,7 @@ $result = $conn -> query($sql);
 
 
             <div class="jumbotron">
-                <form action="register-model.php" method="POST">
+                <form action="../1-model-pages/0-register-model.php" method="POST">
 
                     <div class="row">
                         <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">
@@ -106,7 +106,7 @@ $result = $conn -> query($sql);
                                 echo "<td>".$row["vehicle_number"]."</td>";
                                 echo "<td>".$row["vehicle_owner_name"]."</td>";
                                 echo "<td>".$row["licence_renewal_status"]."</td>";
-                                echo "<td>".'<a href="edit-vehicle-data.php?id='.$row["auto_id"].'" class="btn btn-success btn-sm">Edit</a> <a href="delete-vehicle-data.php?id='.$row["auto_id"].'" class="btn btn-danger btn-sm">Delete</a>'."</td>";
+                                echo "<td>".'<a href="../1-model-pages/2-edit-vehicle-data-model.php?id='.$row["auto_id"].'" class="btn btn-success btn-sm">Edit</a> <a href="../1-model-pages/1-delete-vehicle-data-model.php?id='.$row["auto_id"].'" class="btn btn-danger btn-sm">Delete</a>'."</td>";
                                 echo "</tr>";
 
                                 $index++;
@@ -124,6 +124,7 @@ $result = $conn -> query($sql);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
