@@ -59,10 +59,10 @@ if (mysqli_num_rows($result) > 0) {
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.php">Home Page</a>
+                            <a class="nav-link " href="../index.php">Home Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="register-view.php">Register Page</a>
+                            <a class="nav-link active" href="0-register-view-page.php">Register Page</a>
                         </li>
                     </ul>
                 </div>
