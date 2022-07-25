@@ -106,7 +106,7 @@ $result = $conn -> query($sql);
                                 echo "<td>".$row["vehicle_number"]."</td>";
                                 echo "<td>".$row["vehicle_owner_name"]."</td>";
                                 echo "<td>".$row["licence_renewal_status"]."</td>";
-                                echo "<td>".'<a href="../1-model-pages/2-edit-vehicle-data-model.php?id='.$row["auto_id"].'" class="btn btn-success btn-sm">Edit</a> <a href="../1-model-pages/1-delete-vehicle-data-model.php?id='.$row["auto_id"].'" class="btn btn-danger btn-sm">Delete</a>'."</td>";
+                                echo "<td>".'<a href="../0-view-pages/1-edit-vehicle-data-view-page.php?id='.$row["auto_id"].'" class="btn btn-success btn-sm">Edit</a> <a href="../1-model-pages/1-delete-vehicle-data-model.php?id='.$row["auto_id"].'" class="btn btn-danger btn-sm">Delete</a>'."</td>";
                                 echo "</tr>";
 
                                 $index++;

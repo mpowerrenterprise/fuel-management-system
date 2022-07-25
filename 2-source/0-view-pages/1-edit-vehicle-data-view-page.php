@@ -71,7 +71,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
             <div class="jumbotron">
-                <form action='edit-model.php?id=<?php echo $auto_id; ?>' method="POST">
+                <form action='../1-model-pages/2-edit-vehicle-data-model.php?id=<?php echo $auto_id; ?>' method="POST">
 
                     <div class="row">
                         <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">

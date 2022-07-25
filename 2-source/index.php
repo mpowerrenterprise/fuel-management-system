@@ -34,7 +34,7 @@
 
 
             <div class="jumbotron">
-                <form action='feul-model.php' method="POST">
+                <form action='1-model-pages/3-handle-feul-data-model.php' method="POST">
 
                     <div class="row">
                         <div class="form-group col-md-4 col-sm-4" style="margin-bottom:20px;">

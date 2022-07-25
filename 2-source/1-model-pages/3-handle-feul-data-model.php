@@ -45,7 +45,7 @@ if($vehicle_no != "" && $date_of_received != ""){
         $sql = "UPDATE feul_data SET date_of_received = '$today' WHERE vehicle_no = '$vehicle_no'";
     
         if ($conn->query($sql) === TRUE) {
-            header('Location: feul-success-page.php');
+            header('Location: ../0-view-pages/3-feul-success-view-page.php');
             die();
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
@@ -54,27 +54,25 @@ if($vehicle_no != "" && $date_of_received != ""){
     }else{
 
         $balance_days = 7 - $days;
-
-        header("Location: feul-failed-page.php?days=$balance_days");
-
-
-}
+        header('Location: ../0-view-pages/2-feul-failed-view-page.php?days=$balance_days"');
+        
+    }
 
 
 }else{
 
-// Can get Insert
+    // Can get Insert
 
-$today = date("Y-m-d");
+    $today = date("Y-m-d");
 
-$sql = "INSERT INTO feul_data VALUES ('', '$vehicle_no_user', '$today')";
+    $sql = "INSERT INTO feul_data VALUES ('', '$vehicle_no_user', '$today')";
 
-if ($conn->query($sql) === TRUE) {
-header('Location: feul-success-page.php');
-die();
-} else {
-echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    if ($conn->query($sql) === TRUE) {
+        header('Location: ../0-view-pages/3-feul-success-view-page.php');
+    die();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
 }
 

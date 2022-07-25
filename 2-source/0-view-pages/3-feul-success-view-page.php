@@ -29,7 +29,7 @@
 
 
             <div class="d-grid gap-2">
-                <a href="index.php" class="btn btn-primary" type="button">Go to dashboard</a>
+                <a href="../index.php" class="btn btn-primary" type="button">Go to dashboard</a>
             </div>
         </div>
 
