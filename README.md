@@ -2,22 +2,27 @@
 
 ## Introduction
 
-It is a simple fuel management system prototype for Sri Lankan's fuel shortage issue, it was built for an educational purpose to train trainees.
+It is a simple fuel management system prototype for Sri Lankan's fuel shortage issue, it was built for an educational purpose to train trainees. It has the basic CURD functions. The main idea of this simple prototype is to enter the vehicle number and check whether they are capable of receiving fuel. This system is programmed to allow people receive fuel weekly wise, a vehicle owner is unable to get fuel more than 1 time.
 
-**Note:** It is not a complete production system, it cannot be used for production it has so many bugs and fixes.
+**Acknowledgement:** It is not a complete production system, it cannot be used for production it has so many bugs and fixes.
 
 
-![IMAGE](github-readme-contents/banner.jpg)
+![IMAGE](0-references/0-readme-github-content/banner-image.jpg)
 
 
 ## Technology and Frameworks
 
-- Python 3.6
-- pyttsx3
-- speech_recognition
-- soundfile
-- imutils
-- pygame
+- PHP 7
+- MySQL
+
+## Directory Structure
+
+```
+├── 0-references       # Contains docs/references of the project.
+├── 1-database         # Contains database of the system.
+├── 2-source           # Contains project source code.    
+└── README.md          # Readme Document
+```
 
 ## Configuration & Setup
 
