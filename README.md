@@ -1,4 +1,4 @@
-# FUEL MANAGEMENT SYSTEM
+# Fuel Management System
 
 ## Introduction
 
@@ -77,7 +77,7 @@ This is the home page of the system, As it is already mentioned, it is just a pr
 ![IMAGE](0-references/0-readme-github-content/5-fuel-failed-page.jpg)
 
 
-# CONTACT
+# Contact
 
 ### Website: 
 
